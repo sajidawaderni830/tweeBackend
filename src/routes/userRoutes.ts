@@ -2,7 +2,10 @@ import { Router } from "express";
 import { PrismaClient } from "@prisma/client";
 const router = Router();
 const prisma = new PrismaClient();
-
+//curl test
+/*  $ curl -X PUT -H "Content-Type: application/json" -d '{"name": "Vadim", "bio": "m", "image": "Vadim"}' http://localhost:3000/user/1
+$ curl -X POST -H "Content-Type: application/json" -d '{"name": "Elon Musk", "email": "doge@twitteAr.com", "username": "e1lon"}' http://localhost:3000/user/
+ */
 //create user
 router.post('/',
 
